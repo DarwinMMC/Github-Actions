@@ -11,5 +11,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
-      - name: Show token
-        run: echo ${{secrets.TOKEN_DARWIN}}
+      - name: create file
+        run: echo ${{secrets.TOKEN_DARWIN}} > data.txt
+      - name: show file
+        run: cat data.txt
