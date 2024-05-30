@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Show message
-        run: echo hello world darwin
+        run: echo "hello world darwin $GITHUB_RUN_NUMBER"
