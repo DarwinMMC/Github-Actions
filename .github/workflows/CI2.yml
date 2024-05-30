@@ -12,4 +12,4 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
       - name: Show token
-        run: echo ${{secret.TOKEN_DARWIN}}
+        run: echo ${{secrets.TOKEN_DARWIN}}
