@@ -1,0 +1,11 @@
+name: filter paths
+on:
+  push:
+    paths:
+      - 'src/app/test-path/**'
+jobs:
+  check-path:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "run filter"
+        run: echo "Checking if the path is correct"
