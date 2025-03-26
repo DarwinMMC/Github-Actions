@@ -2,7 +2,7 @@ name: launch-runner
 on:
   push:
     branches:
-      - runner-/*
+      - runner-/**
 jobs:
   check-built:
     runs-on: ubuntu-latest
