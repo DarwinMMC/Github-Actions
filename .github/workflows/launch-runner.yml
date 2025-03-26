@@ -1,0 +1,11 @@
+name: launch-runner
+on:
+  push:
+    branches:
+      - runner-/*
+jobs:
+  check-built:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "show-message"
+        run: echo "Checking if the runner is built"
